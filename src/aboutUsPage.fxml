@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pffFXMLController">
+   <top>
+      <AnchorPane fx:id="navBar" prefHeight="68.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="79.0" fitWidth="78.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.jpeg" />
+               </image>
+            </ImageView>
+            <HBox fx:id="buttonBar" alignment="CENTER" layoutX="174.0" layoutY="13.0" prefHeight="52.0" prefWidth="622.0">
+               <children>
+                  <Button id="navButton" fx:id="pffButton" mnemonicParsing="false" onAction="#pffButtonPage" stylesheets="@pff.css" text="PETER'S FELINE FRIENDS">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="aboutUsButton" mnemonicParsing="false" stylesheets="@pff.css" text="ABOUT US">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="adoptCatButton" mnemonicParsing="false" onAction="#adoptionButtonPage" stylesheets="@pff.css" text="ADOPTABLE CATS">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="acoountButton" mnemonicParsing="false" onAction="#accountButtonPage" stylesheets="@pff.css" text="MY ACCOUNT">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="contactButton" mnemonicParsing="false" onAction="#contactButtonPage" stylesheets="@pff.css" text="CONTACT US">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #07080a#07080a #07080a#07080a;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="471.0" fitWidth="267.0" layoutX="51.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cat1.jpeg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" layoutX="399.0" layoutY="44.0" prefHeight="415.0" prefWidth="340.0" style="-fx-background-color: white;">
+               <children>
+                  <Label text="Our Story">
+                     <font>
+                        <Font name="Apple Braille" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Founded in 2020, Peter’s Feline Friends is a non-profit,">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="no-kill animal shelter and rescue organisation dedicated">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="to the care of abused, abandoned, and physically">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="challenged cats and kittens on the island of O’ahu.">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Since our inception, we have adopted out hundreds of">
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="felines on an annual basis , provided shelter to over 3,000,">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="and services to 3,500. PFF has provided high-quality,">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="compassionate care for hundreds of terminally ill felines">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="and facilitated numerous spay/neuter services for colony">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="and shelter cats. In addition, we assist in local rescues and">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="provide consultation on a wide variety of feline issues.">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Currently, there are over 200-300+ felines of all colours,">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="ages, and personalities at our shelter who are looking to be">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="adopted into responsible, loving homes. Since we are a">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="privately-owned and operated entity, a large portion of">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="donations goes directly towards the care and needs of the">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="animals (food, shelter, medical bills, etc.). Any and all">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="donations are always greatly appreciated AND tax ">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="deductible!">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="140.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="220.0">
+                     <children>
+                        <Label text="200+ Available Cats">
+                           <font>
+                              <Font name="Apple Braille" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="There are over 200 cats available for" />
+                        <Label text="adoption at PFF. All cats at PFF are" />
+                        <Label text="vaccinated, dewormed, treated for fleas," />
+                        <Label text="and litter box trained." />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="220.0">
+                     <HBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="Experienced Staff">
+                           <font>
+                              <Font name="Apple Braille" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Experienced staff can help answer any" />
+                        <Label text="questions you have regarding our" />
+                        <Label text="resident cats, adoption process, and" />
+                        <Label text="affiliated vet clinics." />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="220.0">
+                     <children>
+                        <Label text="Convenient Application">
+                           <font>
+                              <Font name="Apple Braille" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Process">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Online application makes it fast and" />
+                        <Label text="easy. You can schedule your" />
+                        <Label text="appointment online or call us for" />
+                        <Label text="same-day viewing availability." />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

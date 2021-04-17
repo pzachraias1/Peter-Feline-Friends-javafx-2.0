@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignInPageController">
+   <top>
+      <AnchorPane fx:id="navBar" prefHeight="68.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="79.0" fitWidth="78.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.jpeg" />
+               </image>
+            </ImageView>
+            <HBox fx:id="buttonBar" alignment="CENTER" layoutX="174.0" layoutY="13.0" prefHeight="52.0" prefWidth="622.0">
+               <children>
+                  <Button id="navButton" fx:id="pffButton" mnemonicParsing="false" onAction="#pffButtonPage" stylesheets="@pff.css" text="PETER'S FELINE FRIENDS">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="aboutUsButton" mnemonicParsing="false" onAction="#aboutUsButtonPage" stylesheets="@pff.css" text="ABOUT US">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="adoptCatButton" mnemonicParsing="false" onAction="#adoptionButtonPage" stylesheets="@pff.css" text="ADOPTABLE CATS">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="acoountButton" mnemonicParsing="false" onAction="#accountButtonPage" stylesheets="@pff.css" text="MY ACCOUNT">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="navButton" fx:id="contactButton" mnemonicParsing="false" onAction="#contactButtonPage" stylesheets="@pff.css" text="CONTACT US">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="68.0" layoutY="84.0" prefHeight="503.0" prefWidth="664.0">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="688.0">
+                     <children>
+                        <Label text="Name">
+                           <VBox.margin>
+                              <Insets left="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="firstName" onKeyReleased="#keyReleased" promptText="First Name*">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="middleName" promptText="Middle Name">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="lastName" onKeyReleased="#keyReleased" promptText="Last Name*" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="548.0">
+                     <children>
+                        <Label text="Date Of Birth*">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="dateOfBirth" onAction="#getDate" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="548.0">
+                     <children>
+                        <Label text="Email Address*">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="emailAddress" onKeyReleased="#keyReleased" prefHeight="27.0" prefWidth="474.0" promptText="eg. name12@gmail.com">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="279.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="758.0">
+                     <children>
+                        <Label text="Phone Number">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="phoneNumber" promptText="eg. 8084561234">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="279.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="548.0">
+                     <children>
+                        <Label text="Street Address*">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="streetAddress" onKeyReleased="#keyReleased" prefHeight="27.0" prefWidth="474.0" promptText="eg. 55 Fort Street Mall">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="279.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox prefHeight="70.0" prefWidth="664.0">
+                     <children>
+                        <VBox prefHeight="70.0" prefWidth="130.0">
+                           <children>
+                              <Label text="State*" />
+                              <TextField fx:id="state" onKeyReleased="#keyReleased" promptText="eg. HI" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="70.0" prefWidth="130.0">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="City*" />
+                              <TextField fx:id="city" onKeyReleased="#keyReleased" promptText="eg. Honolulu" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="70.0" prefWidth="129.0">
+                           <children>
+                              <Label text="Postal Code*" />
+                              <TextField fx:id="zip" onKeyReleased="#keyReleased" promptText="eg. 96960" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button fx:id="submitButtonName" disable="true" mnemonicParsing="false" onAction="#submitButton" text="Submit">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="41.0" layoutY="14.0" text="SIGN IN">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

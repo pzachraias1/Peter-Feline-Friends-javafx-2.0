@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConfirmationController">
+   <children>
+      <Label layoutX="239.0" layoutY="90.0" prefHeight="68.0" prefWidth="323.0" text="Confirmation Page">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <VBox layoutX="157.0" layoutY="158.0" prefHeight="293.0" prefWidth="487.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="487.0">
+               <children>
+                  <Label text="Client Name:">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="clientName" text="Name of the client">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="487.0">
+               <children>
+                  <Label text="Cat's Name:">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catName" text="Name of the cat">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="487.0">
+               <children>
+                  <Label text="Location:">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="location" text="location here">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="487.0">
+               <children>
+                  <Label text="Date of Appointment:">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" text="dd-MM-yyyy">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="335.0" layoutY="490.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="54.0" prefWidth="130.0" text="Home" />
+   </children>
+</AnchorPane>

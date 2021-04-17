@@ -1,0 +1,17 @@
+#imageBg {
+    -fx-background-image:url('cat2.jpeg');
+    -fx-background-size: 800
+}
+
+#logo {
+    -fx-background-image:url('logo.jpeg');
+}
+
+#navButton {
+    -fx-background-color: white;
+}
+
+#descriptionValue {
+    -fx-text-fill: black;
+    -fx-background-fills: #07080a;
+}
